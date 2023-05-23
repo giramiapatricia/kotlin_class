@@ -1,18 +1,13 @@
-fun main(){
-    val array = arrayOf("Sweet", "Peter", "Deep", "Salt", "Pepper", "Corn", "Swallow", "Lead", "Smart", "Posho")
+fun adTwoNumbers(num1:Int,num2:Int){
+    var sum = num1 + num2
+    println(sum)
+}
 
-    // for loop
-    for (word in array){
-        if (word[0] == 'S') {
-            println(word)
-        }
-    }
-    println()
-    // for each
-    array.forEach {
-        if (it[0] == 'S'){
-            println(it)
-        }
-    }
+fun main(){
+    println("Enter first number:")
+    var num1 = readln()!!.toInt()
+    println("Enter second number:")
+    var num2 = readln()!!.toInt()
+    adTwoNumbers(num1,num2)
 }
 main()
